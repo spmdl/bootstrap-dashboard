@@ -13720,7 +13720,7 @@ mark, .mark {
 
 .card-body li + li .card-border {
   padding-top: 1rem;
-  border-top: 1px solid #000;
+  border-top: 1px solid #CED4DA;
 }
 
 .vertically-center {
