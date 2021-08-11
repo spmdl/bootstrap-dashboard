@@ -1,0 +1,33 @@
+.sidebar {
+  background-color: $gray-100;
+  width: 296px;
+  height: 100vh;
+}
+
+.line-left-hover {
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    border-left: 4px solid transparent;
+  }
+  &:hover {
+    color: $primary;
+    &::before{
+      border-color: $primary;
+    }
+  }
+}
+
+.logo {
+  width: 151px;
+  height: 40px;
+  background: url('../images/logo-ANSWER.svg') no-repeat center / cover;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}

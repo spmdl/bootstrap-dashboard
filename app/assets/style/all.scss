@@ -1,6 +1,10 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-
+// font
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap');
+@import "./base";
 @import './layout/index.scss'
+
