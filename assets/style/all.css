@@ -13731,9 +13731,11 @@ mark, .mark {
           transform: translateY(-50%);
 }
 
-.head-shot-size {
+.head-shot {
   width: 40px;
   height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .logo {
