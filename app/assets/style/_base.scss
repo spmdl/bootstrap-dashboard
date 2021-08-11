@@ -11,8 +11,7 @@ img {
   // max-width: 100%;
   width: 100%;
   // height: auto;
-	// display: block;
-  vertical-align: middle;
+	display: block;
 }
 
 a {
@@ -20,11 +19,16 @@ a {
   // transition: .5s;
 }
 
+small {
+  font-size: 0.75em;
+  line-height: 2;
+  color: $gray-300;
+}
+
 main {
   width: 100%;
   min-height: 100vh;
 }
-
   
 body {
   font-family: 'Lato', 'Roboto Mono', $font-family-sans-serif;

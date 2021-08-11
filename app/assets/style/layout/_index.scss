@@ -22,6 +22,29 @@
   }
 }
 
+.card-body {
+  li + li {
+    .card-img {
+      padding-top: 1rem;
+    }
+    .card-border {
+      padding-top: 1rem;
+      border-top: 1px solid #000;
+    }
+  }
+}
+
+.vertically-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.head-shot-size {
+  width: 40px;
+  height: 40px;
+}
+
 .logo {
   width: 151px;
   height: 40px;
