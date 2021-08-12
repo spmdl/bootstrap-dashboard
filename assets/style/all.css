@@ -5840,7 +5840,7 @@ fieldset:disabled .btn {
 }
 
 .list-group-item-action:active {
-  color: #212529;
+  color: #CED4DA;
   background-color: #CED4DA;
 }
 
@@ -13665,9 +13665,13 @@ a {
   display: block;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 small, .small {
   font-size: 0.75em;
-  line-height: 2;
   color: #6C757D;
 }
 
@@ -13712,6 +13716,15 @@ mark, .mark {
 
 .line-left-hover:hover::before {
   border-color: #198754;
+}
+
+.list-group-item-light.list-group-item-action.active {
+  background-color: #6C757D;
+  border-color: #6C757D;
+}
+
+.list-group-item-light.list-group-item-action.active p, .list-group-item-light.list-group-item-action.active h4, .list-group-item-light.list-group-item-action.active .h4, .list-group-item-light.list-group-item-action.active h3, .list-group-item-light.list-group-item-action.active .h3, .list-group-item-light.list-group-item-action.active span, .list-group-item-light.list-group-item-action.active .text-muted {
+  color: #fff !important;
 }
 
 .card-body li + li .card-img {
