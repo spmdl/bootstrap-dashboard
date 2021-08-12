@@ -13697,6 +13697,11 @@ mark, .mark {
   height: 100vh;
 }
 
+.btn:focus, .btn-light:focus, .btn:active, .btn-light:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .line-left-hover {
   position: relative;
 }
@@ -13716,6 +13721,14 @@ mark, .mark {
 
 .line-left-hover:hover::before {
   border-color: #198754;
+}
+
+.line-left-hover.active {
+  color: #198754;
+}
+
+.line-left-hover.active::before {
+  border-left: 4px solid #198754;
 }
 
 .list-group-item-light.list-group-item-action.active {
