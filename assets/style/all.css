@@ -13531,12 +13531,17 @@ mark, .mark {
   border-left: 4px solid #198754;
 }
 
-.list-group-item-light.list-group-item-action.active {
+.list-group-item-light {
+  background-color: #F8F9FA;
+  border-color: #CED4DA;
+}
+
+.list-group-item-action.active {
   background-color: #6C757D;
   border-color: #6C757D;
 }
 
-.list-group-item-light.list-group-item-action.active p, .list-group-item-light.list-group-item-action.active h4, .list-group-item-light.list-group-item-action.active .h4, .list-group-item-light.list-group-item-action.active h3, .list-group-item-light.list-group-item-action.active .h3, .list-group-item-light.list-group-item-action.active span, .list-group-item-light.list-group-item-action.active .text-muted {
+.list-group-item-action.active p, .list-group-item-action.active h4, .list-group-item-action.active .h4, .list-group-item-action.active h3, .list-group-item-action.active .h3, .list-group-item-action.active span, .list-group-item-action.active .text-muted {
   color: #fff !important;
 }
 
