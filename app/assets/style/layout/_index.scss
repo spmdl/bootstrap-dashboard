@@ -65,6 +65,18 @@
   object-fit: cover;
 }
 
+.modal-img {
+  width: 141px;
+  height: 141px;
+  object-fit: cover;
+}
+
+.page-item:first-child, .page-item:last-child {
+  .page-link {
+    padding: .375rem .375rem;
+  }
+}
+
 .logo {
   width: 151px;
   height: 40px;

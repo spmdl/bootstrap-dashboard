@@ -97,7 +97,32 @@ $card-cap-bg:                       $gray-100 !default;
 $card-border-color:                 $gray-200 !default;
 $card-border-radius:                .125rem !default;
 
-// button
+// Button
 $btn-padding-y-lg:                  .5rem !default;
 $btn-padding-x-lg:                  2rem !default;
 $btn-border-radius-lg:              .125rem !default;
+// btn close 
+$btn-close-width:                   .825rem !default;
+$btn-close-height:                  .825rem !default;
+$btn-close-opacity:                 none !default;
+$btn-close-hover-opacity:           0.5 !default;
+
+// Table
+$table-cell-padding-y:        1rem !default;
+$table-cell-padding-x:        1rem !default;
+
+// Pagination
+$pagination-color:                  $primary !default;
+$pagination-hover-color:            $white !default;
+$pagination-hover-bg:               $primary !default;
+$pagination-hover-border-color:     $gray-300 !default;
+$pagination-focus-color:            $white !default;
+$pagination-focus-bg:               $primary !default;
+$pagination-focus-outline:          0 !default;
+$pagination-active-border-color:    $gray-300 !default;
+// setting pagination transition(form _transition.scss)
+$pagination-transition:             .5s !default;
+$enable-reduced-motion:             false !default;
+
+// Modals
+$modal-inner-padding:               2rem !default;
