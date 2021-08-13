@@ -13,11 +13,12 @@ $grays: (
 ) !default;
 
 // Color system
-$primary: #198754;
+$primary:#198754;
 $danger: #DC3545;
-$black: #000000;
-$white: #ffffff; 
-
+$black:  #000000;
+$white:  #ffffff; 
+$light:    $gray-200 !default;
+$dark:     $gray-400 !default;
 
 // Spacing
 $spacers: (
@@ -36,8 +37,8 @@ $spacers: (
 );
 
 // Font, line-height, and color for body text, headings, and more.
-$font-family-lato:      'Lato', sans-serif;
-$font-family-roboto:    'Roboto Mono', monospace;
+$font-family-lato:                 'Lato', sans-serif;
+$font-family-roboto:               'Roboto Mono', monospace;
 
 $font-sizes: (
   "s":   .875rem,   // 14
@@ -48,32 +49,32 @@ $font-sizes: (
   "4":   1.5rem,    // 24
 );
 
-$text-muted:                $gray-300 !default;
+$text-muted:                        $gray-300 !default;
 // $small-font-size:           .75em !default;
 
 // Body
-$body-color:                $gray-400 !default;
+$body-color:                        $gray-400 !default;
 
 // Links
-$link-color:                $gray-400 !default;
-$link-decoration:           none !default;
+$link-color:                        $gray-400 !default;
+$link-decoration:                   none !default;
 
 // navbar
-$navbar-brand-font-size:    1.5rem!default;
+$navbar-brand-font-size:            1.5rem!default;
 // $navbar-light-toggler-icon-bg: none;
 
 // h1~h6
-$headings-font-weight:      400 !default;
-$headings-margin-bottom:    0!default;
-$headings-line-height:      1.5 !default;
+$headings-font-weight:              400 !default;
+$headings-margin-bottom:            0!default;
+$headings-line-height:              1.5 !default;
 
 // Options
 // 刪除 _caret 產生的偽元素（dropdown）
-$enable-caret:                false !default;
+$enable-caret:                      false !default;
 
 // border
-$border-color:                $gray-200 !default;
-$border-radius-sm:            .125rem !default;
+$border-color:                      $gray-200 !default;
+$border-radius-sm:                  .125rem !default;
 
 // List group
 $list-group-border-color:           $gray-200 !default;
@@ -98,9 +99,14 @@ $card-border-color:                 $gray-200 !default;
 $card-border-radius:                .125rem !default;
 
 // Button
-$btn-padding-y-lg:                  .5rem !default;
+$btn-padding-y-lg:                  1rem !default;
 $btn-padding-x-lg:                  2rem !default;
 $btn-border-radius-lg:              .125rem !default;
+$btn-font-size-lg:                  1rem !default;
+$btn-padding-y:                     .5rem !default;
+$btn-padding-x:                     2rem !default;
+$btn-border-radius:                 .125rem !default;
+$btn-line-height:                   1.5 !default;
 // btn close 
 $btn-close-width:                   .825rem !default;
 $btn-close-height:                  .825rem !default;
@@ -108,8 +114,8 @@ $btn-close-opacity:                 none !default;
 $btn-close-hover-opacity:           0.5 !default;
 
 // Table
-$table-cell-padding-y:        1rem !default;
-$table-cell-padding-x:        1rem !default;
+$table-cell-padding-y:              1rem !default;
+$table-cell-padding-x:              1rem !default;
 
 // Pagination
 $pagination-color:                  $primary !default;
@@ -121,8 +127,25 @@ $pagination-focus-bg:               $primary !default;
 $pagination-focus-outline:          0 !default;
 $pagination-active-border-color:    $gray-300 !default;
 // setting pagination transition(form _transition.scss)
-$pagination-transition:             .5s !default;
+$pagination-transition:             .3s !default;
 $enable-reduced-motion:             false !default;
 
 // Modals
 $modal-inner-padding:               2rem !default;
+
+// Form
+$form-select-line-height:           1 !default;
+$form-select-padding-y:             1rem !default;
+$form-select-padding-x:             1rem !default;
+$form-select-border-width:          1px !default;
+$form-select-border-radius:         .125rem !default;
+
+$input-focus-border-color:          $primary !default;
+
+$input-padding-y:                   1rem !default;
+$input-padding-x:                   1rem !default;
+$input-line-height:                 1 !default;
+$input-disabled-bg:                 $gray-100 !default;
+$input-border-width:                0 !default;
+$input-border-radius:               .125rem !default;
+$input-placeholder-color:           $gray-400 !default;
