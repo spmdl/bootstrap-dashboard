@@ -4,9 +4,10 @@
 ClassicEditor.create(document.querySelector('#editor'), {
   // 這裡可以設定 plugin
   placeholder: 'Reply an answer…'
-})["catch"](function (error) {
-  console.error(error);
-});
+}) // .catch( error => {
+//     console.error( error );
+// } );
+;
 $(function () {
   $('.js_ckeditor_content').hide(); // 開啟編輯
 
