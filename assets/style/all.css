@@ -283,8 +283,8 @@ table {
 }
 
 caption {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: #6C757D;
   text-align: left;
 }
@@ -2320,7 +2320,7 @@ progress {
 }
 
 .table > :not(caption) > * > * {
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 1rem;
   background-color: var(--bs-table-bg);
   border-bottom-width: 1px;
   -webkit-box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
@@ -2562,14 +2562,6 @@ progress {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .form-control {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
-}
-
 .form-control[type="file"] {
   overflow: hidden;
 }
@@ -2641,14 +2633,6 @@ progress {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .form-control::file-selector-button {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
-}
-
 .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
   background-color: #c4c9cf;
 }
@@ -2670,13 +2654,6 @@ progress {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .form-control::-webkit-file-upload-button {
-    -webkit-transition: none;
-    transition: none;
-  }
 }
 
 .form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
@@ -2798,14 +2775,6 @@ textarea.form-control-lg {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .form-select {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
 }
 
 .form-select:focus {
@@ -2937,14 +2906,6 @@ textarea.form-control-lg {
   transition: background-position 0.15s ease-in-out;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .form-switch .form-check-input {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
-}
-
 .form-switch .form-check-input:focus {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%238cc3aa'/%3e%3c/svg%3e");
 }
@@ -3014,13 +2975,6 @@ textarea.form-control-lg {
           appearance: none;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .form-range::-webkit-slider-thumb {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
 .form-range::-webkit-slider-thumb:active {
   background-color: #badbcc;
 }
@@ -3045,13 +2999,6 @@ textarea.form-control-lg {
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -moz-appearance: none;
        appearance: none;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .form-range::-moz-range-thumb {
-    -moz-transition: none;
-    transition: none;
-  }
 }
 
 .form-range::-moz-range-thumb:active {
@@ -3106,14 +3053,6 @@ textarea.form-control-lg {
   -o-transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
   transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
   transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .form-floating > label {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
 }
 
 .form-floating > .form-control {
@@ -3508,14 +3447,6 @@ textarea.form-control-lg {
   -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .btn {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
 }
 
 .btn:hover {
@@ -4166,14 +4097,6 @@ fieldset:disabled .btn {
   transition: opacity 0.15s linear;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .fade {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
-}
-
 .fade:not(.show) {
   opacity: 0;
 }
@@ -4188,14 +4111,6 @@ fieldset:disabled .btn {
   -webkit-transition: height 0.35s ease;
   -o-transition: height 0.35s ease;
   transition: height 0.35s ease;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .collapsing {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
 }
 
 .dropup,
@@ -4603,14 +4518,6 @@ fieldset:disabled .btn {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .nav-link {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
-}
-
 .nav-link:hover, .nav-link:focus {
   color: #1a1e21;
 }
@@ -4796,14 +4703,6 @@ fieldset:disabled .btn {
   -o-transition: box-shadow 0.15s ease-in-out;
   transition: box-shadow 0.15s ease-in-out;
   transition: box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .navbar-toggler {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
 }
 
 .navbar-toggler:hover {
@@ -5347,14 +5246,6 @@ fieldset:disabled .btn {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease, -webkit-box-shadow 0.15s ease-in-out;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .accordion-button {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
-}
-
 .accordion-button:not(.collapsed) {
   color: #177a4c;
   background-color: #e8f3ee;
@@ -5384,14 +5275,6 @@ fieldset:disabled .btn {
   -o-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .accordion-button::after {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
 }
 
 .accordion-button:hover {
@@ -5507,35 +5390,25 @@ fieldset:disabled .btn {
 .page-link {
   position: relative;
   display: block;
-  color: #212529;
+  color: #198754;
   background-color: #ffffff;
   border: 1px solid #6C757D;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .page-link {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .page-link:hover {
   z-index: 2;
-  color: #1a1e21;
-  background-color: #CED4DA;
+  color: #ffffff;
+  background-color: #198754;
   border-color: #6C757D;
 }
 
 .page-link:focus {
   z-index: 3;
-  color: #1a1e21;
-  background-color: #CED4DA;
+  color: #ffffff;
+  background-color: #198754;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
           box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
@@ -5549,7 +5422,7 @@ fieldset:disabled .btn {
   z-index: 3;
   color: #ffffff;
   background-color: #198754;
-  border-color: #198754;
+  border-color: #6C757D;
 }
 
 .page-item.disabled .page-link {
@@ -5777,14 +5650,6 @@ fieldset:disabled .btn {
   transition: width 0.6s ease;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .progress-bar {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
-}
-
 .progress-bar-striped {
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5794,13 +5659,6 @@ fieldset:disabled .btn {
 .progress-bar-animated {
   -webkit-animation: 1s linear infinite progress-bar-stripes;
           animation: 1s linear infinite progress-bar-stripes;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .progress-bar-animated {
-    -webkit-animation: none;
-            animation: none;
-  }
 }
 
 .list-group {
@@ -6199,20 +6057,20 @@ fieldset:disabled .btn {
 .btn-close {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  width: 1em;
-  height: 1em;
+  width: 0.825rem;
+  height: 0.825rem;
   padding: 0.25em 0.25em;
   color: #000000;
-  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/0.825rem auto no-repeat;
   border: 0;
   border-radius: 0.25rem;
-  opacity: 0.5;
+  opacity: none;
 }
 
 .btn-close:hover {
   color: #000000;
   text-decoration: none;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 .btn-close:focus {
@@ -6326,14 +6184,6 @@ fieldset:disabled .btn {
           transform: translate(0, -50px);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .modal.fade .modal-dialog {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
-}
-
 .modal.show .modal-dialog {
   -webkit-transform: none;
       -ms-transform: none;
@@ -6417,15 +6267,15 @@ fieldset:disabled .btn {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 2rem 2rem;
   border-bottom: 1px solid #CED4DA;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
 
 .modal-header .btn-close {
-  padding: 0.5rem 0.5rem;
-  margin: -0.5rem -0.5rem -0.5rem auto;
+  padding: 1rem 1rem;
+  margin: -1rem -1rem -1rem auto;
 }
 
 .modal-title {
@@ -6438,7 +6288,7 @@ fieldset:disabled .btn {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .modal-footer {
@@ -6455,7 +6305,7 @@ fieldset:disabled .btn {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 0.75rem;
+  padding: 1.75rem;
   border-top: 1px solid #CED4DA;
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
@@ -6923,14 +6773,6 @@ fieldset:disabled .btn {
   transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .carousel-item {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
-}
-
 .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev {
@@ -6979,15 +6821,6 @@ fieldset:disabled .btn {
   transition: opacity 0s 0.6s;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .carousel-fade .active.carousel-item-start,
-  .carousel-fade .active.carousel-item-end {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
-}
-
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
@@ -7013,15 +6846,6 @@ fieldset:disabled .btn {
   -webkit-transition: opacity 0.15s ease;
   -o-transition: opacity 0.15s ease;
   transition: opacity 0.15s ease;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .carousel-control-prev,
-  .carousel-control-next {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
 }
 
 .carousel-control-prev:hover, .carousel-control-prev:focus,
@@ -7108,14 +6932,6 @@ fieldset:disabled .btn {
   -webkit-transition: opacity 0.6s ease;
   -o-transition: opacity 0.6s ease;
   transition: opacity 0.6s ease;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .carousel-indicators [data-bs-target] {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
 }
 
 .carousel-indicators .active {
@@ -7220,14 +7036,6 @@ fieldset:disabled .btn {
   height: 1rem;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .spinner-border,
-  .spinner-grow {
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-  }
-}
-
 .offcanvas {
   position: fixed;
   bottom: 0;
@@ -7251,14 +7059,6 @@ fieldset:disabled .btn {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .offcanvas {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
-}
-
 .offcanvas-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7269,14 +7069,14 @@ fieldset:disabled .btn {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 2rem 2rem;
 }
 
 .offcanvas-header .btn-close {
-  padding: 0.5rem 0.5rem;
-  margin-top: -0.5rem;
-  margin-right: -0.5rem;
-  margin-bottom: -0.5rem;
+  padding: 1rem 1rem;
+  margin-top: -1rem;
+  margin-right: -1rem;
+  margin-bottom: -1rem;
 }
 
 .offcanvas-title {
@@ -7288,7 +7088,7 @@ fieldset:disabled .btn {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 1rem 1rem;
+  padding: 2rem 2rem;
   overflow-y: auto;
 }
 
@@ -13677,7 +13477,7 @@ small, .small {
 
 main {
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 }
 
 body {
@@ -13762,6 +13562,17 @@ mark, .mark {
   height: 40px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.modal-img {
+  width: 141px;
+  height: 141px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.page-item:first-child .page-link, .page-item:last-child .page-link {
+  padding: .375rem .375rem;
 }
 
 .logo {
