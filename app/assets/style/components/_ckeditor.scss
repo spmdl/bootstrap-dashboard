@@ -1,0 +1,8 @@
+// 文字窗高度
+.ck-editor__editable {
+  min-height: 20rem;
+}
+.ck.ck-editor__main > .ck-editor__editable {
+  border-bottom-right-radius: 0.125rem !important;
+  border-bottom-left-radius: 0.125rem !important;
+}

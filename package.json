@@ -17,6 +17,7 @@
   "dependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
+    "@ckeditor/ckeditor5-code-block": "^29.1.0",
     "autoprefixer": "^9.8.6",
     "bootstrap": "^5.0.2",
     "browser-sync": "^2.26.13",
