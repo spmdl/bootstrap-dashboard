@@ -6318,7 +6318,7 @@ fieldset:disabled .btn {
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
           box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
-  opacity: 1;
+  opacity: 0;
 }
 
 .btn-close:disabled, .btn-close.disabled {
@@ -13957,7 +13957,6 @@ mark, .mark {
 .sidebar {
   background-color: #F8F9FA;
   width: 296px;
-  height: 100vh;
 }
 
 .btn:focus, .btn-light:focus, .btn:active, .btn-light:active {
