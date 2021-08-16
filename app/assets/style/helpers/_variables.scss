@@ -137,6 +137,15 @@ $enable-reduced-motion:             false !default;
 // Modals
 $modal-inner-padding:               2rem !default;
 
+// Accordion
+$accordion-button-active-color:     $dark !default;
+$accordion-button-active-bg:        $white !default;
+$accordion-border-width:            0 !default;
+$accordion-button-focus-box-shadow: none !default;
+$accordion-icon-width:              1.125rem !default;
+$accordion-icon-color:              $primary !default;
+$accordion-icon-active-color:       $primary !default;
+
 // Form
 $form-select-line-height:           1 !default;
 $form-select-padding-y:             1rem !default;
