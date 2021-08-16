@@ -180,7 +180,7 @@ current: admin
     </table>
   </div>
   <!-- pagination -->
-  <nav aria-label="Page navigation example">
+  <nav aria-label="Page navigation">
     <ul class="pagination justify-content-end pt-6">
       <li class="page-item">
         <a class="page-link" href="javascript:;" aria-label="Previous">
@@ -212,7 +212,7 @@ current: admin
               </div>
               <p>Admin</p>
               <h3 class="fs-4 fw-bold lh-sm mb-xxs">Emir Wicks</h3>
-              <p class="fs-s text-muted mb-xs">emir.wicks@mail.com</p>
+              <a href="mailto:" class="fs-s text-muted mb-xs">emir.wicks@mail.com</a>
               <div class="d-flex align-items-center">
                 <p class="fs-s">Verified</p>
                 <button class="btn ms-auto text-primary p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVerified" aria-expanded="false" aria-controls="collapseVerified">
@@ -237,7 +237,7 @@ current: admin
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
       <form class="modal-content">
         <div class="modal-header">
-          <h3 class="modal-title fs-4 fw-bold" id="exampleModalLabel">New Admin</h3>
+          <h3 class="modal-title fs-4 fw-bold" id="newAdminModallLabel">New Admin</h3>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body p-4">
@@ -245,11 +245,11 @@ current: admin
             <legend class="fs-3 fw-bold mb-2">Account</legend>
             <div class="mb-3">
               <div class="mb-3">
-                <label for="exampleInputPassword" class="form-label fs-s">Name</label>
-                <input type="text" class="form-control" id="exampleInputPassword">
+                <label for="newInputPassword" class="form-label fs-s">Name</label>
+                <input type="text" class="form-control" id="newInputPassword">
               </div>
-              <label for="exampleInputEmail" class="form-label fs-s">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+              <label for="newInputEmail" class="form-label fs-s">Email address</label>
+              <input type="email" class="form-control" id="newInputEmail" aria-describedby="emailHelp">
             </div>
           </fieldset>
           <fieldset class="border-bottom border-light pb-1 mb-3">
@@ -276,24 +276,24 @@ current: admin
             <legend class="fs-3 fw-bold mb-2">Custom Access</legend>
             <ul class="mb-3 form-check">
               <li class="mb-2">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Lecture</label>
+                <input type="checkbox" class="form-check-input" id="newCheck1">
+                <label class="form-check-label" for="newCheck1">Lecture</label>
               </li>
               <li class="mb-2">
-                <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                <label class="form-check-label" for="exampleCheck2">Coupon</label>
+                <input type="checkbox" class="form-check-input" id="newCheck2">
+                <label class="form-check-label" for="newCheck2">Coupon</label>
               </li>
               <li class="mb-2">
-                <input type="checkbox" class="form-check-input" id="exampleCheck3">
-                <label class="form-check-label" for="exampleCheck3">Message</label>
+                <input type="checkbox" class="form-check-input" id="newCheck3">
+                <label class="form-check-label" for="newCheck3">Message</label>
               </li>
               <li class="mb-2">
-                <input type="checkbox" class="form-check-input" id="exampleCheck4">
-                <label class="form-check-label" for="exampleCheck4">Setting</label>
+                <input type="checkbox" class="form-check-input" id="newCheck4">
+                <label class="form-check-label" for="newCheck4">Setting</label>
               </li>
               <li class="mb-2">
-                <input type="checkbox" class="form-check-input" id="exampleCheck5">
-                <label class="form-check-label" for="exampleCheck5">Task Menu</label>
+                <input type="checkbox" class="form-check-input" id="newCheck5">
+                <label class="form-check-label" for="newCheck5">Task Menu</label>
               </li>
             </ul>
           </fieldset>
@@ -310,7 +310,7 @@ current: admin
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
       <form class="modal-content">
         <div class="modal-header">
-          <h3 class="modal-title fs-4 fw-bold" id="exampleModalLabel">Edit Admin</h3>
+          <h3 class="modal-title fs-4 fw-bold" id="editAdminModalLabel">Edit Admin</h3>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body p-4">
@@ -318,11 +318,11 @@ current: admin
             <legend class="fs-3 fw-bold mb-2">Account</legend>
             <div class="mb-3">
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label fs-s">Name</label>
-                <input type="text" class="form-control border-0" id="exampleInputPassword1" placeholder="Emir Wicks" readonly>
+                <label for="editInputPassword" class="form-label fs-s">Name</label>
+                <input type="text" class="form-control border-0" id="editInputPassword" placeholder="Emir Wicks" readonly>
               </div>
-              <label for="exampleInputEmail1" class="form-label fs-s">Email address</label>
-              <input type="email" class="form-control border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="emir.wicks@mail.com" readonly>
+              <label for="editInputEmail" class="form-label fs-s">Email address</label>
+              <input type="email" class="form-control border-0" id="editInputEmail" aria-describedby="emailHelp" placeholder="emir.wicks@mail.com" readonly>
             </div>
           </fieldset>
           <fieldset class="border-bottom border-light pb-1 mb-3">
@@ -330,7 +330,7 @@ current: admin
             <div class="mb-3">
               <div class="d-flex justify-content-between mb-2">
                 <div class="d-flex">
-                  <span class="material-icons-outlined text-primary d-block me-1">check_circle</span>
+                  <span class="material-icons text-primary d-block me-1">check_circle</span>
                   <p class="fw-bold">Verified</p>
                 </div>
                 <span class="fs-s text-dark">2020/4/12</span>
@@ -341,7 +341,7 @@ current: admin
           <fieldset class="border-bottom border-light pb-1 mb-3">
             <legend class="fs-3 fw-bold mb-2">Access Level</legend>
             <div class="mb-3">
-              <select class="form-select" aria-label="Default select example">
+              <select class="form-select" aria-label="Default select">
                 <option selected>Admin</option>
                 <option value="1">Visitor</option>
               </select>
@@ -351,24 +351,24 @@ current: admin
             <legend class="fs-3 fw-bold mb-2">Custom Access</legend>
             <ul class="mb-3 form-check">
               <li class="mb-2">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Lecture</label>
+                <input type="checkbox" class="form-check-input" id="editCheck1">
+                <label class="form-check-label" for="editCheck1">Lecture</label>
               </li>
               <li class="mb-2">
-                <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                <label class="form-check-label" for="exampleCheck2">Coupon</label>
+                <input type="checkbox" class="form-check-input" id="editCheck2">
+                <label class="form-check-label" for="editCheck2">Coupon</label>
               </li>
               <li class="mb-2">
-                <input type="checkbox" class="form-check-input" id="exampleCheck3">
-                <label class="form-check-label" for="exampleCheck3">Message</label>
+                <input type="checkbox" class="form-check-input" id="editCheck3">
+                <label class="form-check-label" for="editCheck3">Message</label>
               </li>
               <li class="mb-2">
-                <input type="checkbox" class="form-check-input" id="exampleCheck4">
-                <label class="form-check-label" for="exampleCheck4">Setting</label>
+                <input type="checkbox" class="form-check-input" id="editCheck4">
+                <label class="form-check-label" for="editCheck4">Setting</label>
               </li>
               <li class="mb-2">
-                <input type="checkbox" class="form-check-input" id="exampleCheck5">
-                <label class="form-check-label" for="exampleCheck5">Task Menu</label>
+                <input type="checkbox" class="form-check-input" id="editCheck5">
+                <label class="form-check-label" for="editCheck5">Task Menu</label>
               </li>
             </ul>
           </fieldset>
