@@ -2526,22 +2526,22 @@ progress {
 }
 
 .col-form-label {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: calc(1rem + 1px);
+  padding-bottom: calc(1rem + 1px);
   margin-bottom: 0;
   font-size: inherit;
   line-height: 1;
 }
 
 .col-form-label-lg {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: calc(0.5rem + 1px);
+  padding-bottom: calc(0.5rem + 1px);
   font-size: 1.25rem;
 }
 
 .col-form-label-sm {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: calc(0.25rem + 1px);
+  padding-bottom: calc(0.25rem + 1px);
   font-size: 0.875rem;
 }
 
@@ -2561,7 +2561,7 @@ progress {
   color: #212529;
   background-color: #ffffff;
   background-clip: padding-box;
-  border: 0 solid #212529;
+  border: 1px solid #212529;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -2635,7 +2635,7 @@ progress {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
-  border-inline-end-width: 0;
+  border-inline-end-width: 1px;
   border-radius: 0;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -2659,7 +2659,7 @@ progress {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
-  border-inline-end-width: 0;
+  border-inline-end-width: 1px;
   border-radius: 0;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -2680,7 +2680,7 @@ progress {
   color: #212529;
   background-color: transparent;
   border: solid transparent;
-  border-width: 0 0;
+  border-width: 1px 0;
 }
 
 .form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg {
@@ -2689,7 +2689,7 @@ progress {
 }
 
 .form-control-sm {
-  min-height: calc(1em + 0.5rem);
+  min-height: calc(1em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
@@ -2710,7 +2710,7 @@ progress {
 }
 
 .form-control-lg {
-  min-height: calc(1em + 1rem);
+  min-height: calc(1em + 1rem + 2px);
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
@@ -2731,15 +2731,15 @@ progress {
 }
 
 textarea.form-control {
-  min-height: calc(1em + 2rem);
+  min-height: calc(1em + 2rem + 2px);
 }
 
 textarea.form-control-sm {
-  min-height: calc(1em + 0.5rem);
+  min-height: calc(1em + 0.5rem + 2px);
 }
 
 textarea.form-control-lg {
-  min-height: calc(1em + 1rem);
+  min-height: calc(1em + 1rem + 2px);
 }
 
 .form-control-color {
@@ -3044,7 +3044,7 @@ textarea.form-control-lg {
 
 .form-floating > .form-control,
 .form-floating > .form-select {
-  height: 3.5rem;
+  height: calc(3.5rem + 2px);
   line-height: 1.25;
 }
 
@@ -3055,7 +3055,7 @@ textarea.form-control-lg {
   height: 100%;
   padding: 1rem 1rem;
   pointer-events: none;
-  border: 0 solid transparent;
+  border: 1px solid transparent;
   -webkit-transform-origin: 0 0;
       -ms-transform-origin: 0 0;
           transform-origin: 0 0;
@@ -3193,7 +3193,7 @@ textarea.form-control-lg {
   text-align: center;
   white-space: nowrap;
   background-color: #CED4DA;
-  border: 0 solid #212529;
+  border: 1px solid #212529;
   border-radius: 0.125rem;
 }
 
@@ -3233,7 +3233,7 @@ textarea.form-control-lg {
 }
 
 .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-  margin-left: 0;
+  margin-left: -1px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -6301,17 +6301,17 @@ fieldset:disabled .btn {
   width: 0.825rem;
   height: 0.825rem;
   padding: 0.25em 0.25em;
-  color: #000000;
-  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/0.825rem auto no-repeat;
+  color: #DC3545;
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23DC3545'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/0.825rem auto no-repeat;
   border: 0;
   border-radius: 0.125rem;
-  opacity: none;
+  opacity: 0.3;
 }
 
 .btn-close:hover {
-  color: #000000;
+  color: #DC3545;
   text-decoration: none;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .btn-close:focus {
@@ -13919,6 +13919,13 @@ img {
 
 a {
   display: block;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+a:hover {
+  color: #198754;
 }
 
 p {
