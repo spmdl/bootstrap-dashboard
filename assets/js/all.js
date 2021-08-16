@@ -27,21 +27,18 @@ ClassicEditor.create(document.querySelector('#editor'), {
 
 (function () {
   var card = document.querySelector(".card");
-  var openBtn = document.querySelector(".js-Reply");
-  var cancelBtn = document.querySelector(".js-cancel");
-  var replyGroupOuter = document.querySelector(".replyGroup-outer");
+  var openBtn = document.querySelector(".js-editor-open");
+  var cancelBtn = document.querySelector(".js-editor-cancel");
   var operationBtn = document.querySelector(".js-operation-btns");
   openBtn.addEventListener("click", function (e) {
     operationBtn.classList.add('d-none');
     card.classList.remove('rounded');
-    card.classList.add('border-bottom-0', 'rounded-top');
-    replyGroupOuter.classList.add('active');
+    card.classList.add('rounded-top');
     console.log('add active');
   });
   cancelBtn.addEventListener("click", function (e) {
-    card.classList.remove('border-bottom-0', 'rounded-top');
+    card.classList.remove('rounded-top');
     card.classList.add('rounded');
-    replyGroupOuter.classList.remove('active');
     operationBtn.classList.remove('d-none');
     console.log('remove active');
   });
