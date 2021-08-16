@@ -1,5 +1,5 @@
 ClassicEditor
-  .create( document.querySelector( '#editor' ), {
+  .create( document.querySelector('#editor'), {
     toolbar: [ 'heading', 'bold', 'italic', 'bulletedList', 'numberedList',  'imageUpload', 'link', 'code', '|', 'outdent','indent' ],
     placeholder: 'Reply an answer…',
     heading: [
@@ -28,29 +28,24 @@ ClassicEditor
   } )
   .catch( error => {
     console.error( error );
-  } );
+  });
 
 (function () {
   let card = document.querySelector(".card");
-  let openBtn = document.querySelector(".js-Reply");
-  let cancelBtn = document.querySelector(".js-cancel");
-  let replyGroupOuter = document.querySelector(".replyGroup-outer");
+  let openBtn = document.querySelector(".js-editor-open");
+  let cancelBtn = document.querySelector(".js-editor-cancel");
   let operationBtn = document.querySelector(".js-operation-btns");
 
   openBtn.addEventListener("click", function (e) {
     operationBtn.classList.add('d-none');
     card.classList.remove('rounded');
-    card.classList.add('border-bottom-0', 'rounded-top');
-    replyGroupOuter.classList.add('active');
+    card.classList.add('rounded-top');
     console.log('add active');
   });
   cancelBtn.addEventListener("click", function (e) {
-    card.classList.remove('border-bottom-0', 'rounded-top');
+    card.classList.remove('rounded-top');
     card.classList.add('rounded');
-    replyGroupOuter.classList.remove('active');
     operationBtn.classList.remove('d-none');
     console.log('remove active');
   });
-  
-
 }());
