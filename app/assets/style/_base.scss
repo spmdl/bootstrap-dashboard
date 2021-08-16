@@ -19,7 +19,10 @@ img {
 
 a {
   display: block;
-  // transition: .5s;
+  transition: .3s;
+}
+a:hover {
+  color: $primary;
 }
 
 p {

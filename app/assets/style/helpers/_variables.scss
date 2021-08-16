@@ -112,8 +112,9 @@ $btn-line-height:                   1.5 !default;
 // btn close 
 $btn-close-width:                   .825rem !default;
 $btn-close-height:                  .825rem !default;
-$btn-close-opacity:                 none !default;
-$btn-close-hover-opacity:           0.5 !default;
+$btn-close-color:                   $danger !default;
+$btn-close-opacity:                 .3 !default;
+$btn-close-hover-opacity:           1 !default;
 
 // Table
 $table-cell-padding-y:              1rem !default;
@@ -148,8 +149,9 @@ $input-padding-y:                   1rem !default;
 $input-padding-x:                   1rem !default;
 $input-line-height:                 1 !default;
 $input-disabled-bg:                 $gray-100 !default;
-$input-border-width:                0 !default;
+$input-border-width:                1px !default;
 $input-border-radius:               .125rem !default;
+// $input-border-color:                $gray-400 !default;
 $input-placeholder-color:           $gray-400 !default;
 
 $form-check-input-border:           2px solid $black !default;

@@ -10,177 +10,169 @@ current: admin
     <nav class="d-flex align-items-center justify-content-between mb-4">
       <div class="d-flex align-items-center">
         <h2 class="fs-4 fw-bold me-6">Admin</h2>
-        <div class="dropdown">
-          <button class="btn dropdown-toggle fw-bold p-0 pe-1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            Add New Admin
-            <span class="material-icons-outlined fs-4 text-primary vertically-center">add</span>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">切板直播班</a></li>
-            <li><a class="dropdown-item" href="#">JS 直播班</a></li>
-          </ul>
-        </div>
+        <a href="javascript:;" class="dropdown-toggle fw-bold p-0 ms-2" data-bs-toggle="modal" data-bs-target="#newAdminModal">
+          <span class="material-icons-outlined align-middle fs-4 text-primary me-1">add</span>
+          <span class="align-middle">Add New Admin</span>
+        </a>
       </div>
       <div class="d-flex">
-        <a href="javascript:;"><span class="material-icons-outlined d-block me-3">search</span></a>
+        <a href="javascript:;"><span class="material-icons-outlined d-block me-4">search</span></a>
         <a href="javascript:;"><span class="material-icons d-block">notifications_active</span></a>
       </div>
     </nav>
     <table class="table table-hover">
       <thead>
         <tr class="align-middle">
-          <th scope="col" class="p-xxs">
-            ID
-            <button class="btn text-primary p-0 ms-xxs">
-              <span class="material-icons-outlined fs-3">
-                arrow_downward
-              </span>
+          <th scope="col" class="p-xxs px-0">
+            <button type="button" class="btn dropdown-toggle fw-bold p-0">
+              <span class="align-middle me-xxs">ID</span>
+              <span class="material-icons-outlined align-middle fs-3 text-primary">arrow_downward</span>
             </button>
           </th>
-          <th scope="col" class="p-xxs">Name</th>
-          <th scope="col" class="p-xxs">Email</th>
-          <th scope="col" class="p-xxs">Verified</th>
-          <th scope="col" class="p-xxs"></th>
+          <th scope="col" class="p-xxs px-0">Name</th>
+          <th scope="col" class="p-xxs px-0">Email</th>
+          <th scope="col" class="p-xxs px-0">Verified</th>
+          <th scope="col" class="p-xxs px-0"></th>
         </tr>
       </thead>
       <tbody>
         <tr class="align-middle">
-          <td scope="row">#1</td>
-          <td>Emir Wicks</td>
-          <td>emir.wicks@mail.com</td>
-          <td>Yes</td>
+          <td scope="row" class="px-0">#1</td>
+          <td class="px-0">Emir Wicks</td>
+          <td class="px-0">emir.wicks@mail.com</td>
+          <td class="px-0">Yes</td>
           <td class="text-end p-0">
             <button type="button" class="btn p-0 me-3" data-bs-toggle="modal" data-bs-target="#viewInfoModal">
-              <span class="material-icons d-block">remove_red_eye</span>
+              <a href="javascript:;"><span class="material-icons d-block">remove_red_eye</span></a>
             </button>
-            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editInfoModal">
-              <span class="material-icons d-block">edit</span>
+            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editAdminModal">
+              <a href="javascript:;"><span class="material-icons d-block">edit</span></a>
             </button>
           </td>
         </tr>
         <tr class="align-middle">
-          <td scope="row">#2</td>
-          <td>Zaina Goldsmith</td>
-          <td>zaina.goldsmith@mail.com</td>
-          <td>Yes</td>
+          <td scope="row" class="px-0">#2</td>
+          <td class="px-0">Zaina Goldsmith</td>
+          <td class="px-0">zaina.goldsmith@mail.com</td>
+          <td class="px-0">Yes</td>
           <td class="text-end p-0">
             <button type="button" class="btn p-0 me-3" data-bs-toggle="modal" data-bs-target="#viewInfoModal">
-              <span class="material-icons d-block">remove_red_eye</span>
+              <a href="javascript:;"><span class="material-icons d-block">remove_red_eye</span></a>
             </button>
-            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editInfoModal">
-              <span class="material-icons d-block">edit</span>
+            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editAdminModal">
+              <a href="javascript:;"><span class="material-icons d-block">edit</span></a>
             </button>
           </td>
         </tr>
         <tr class="align-middle">
-          <td scope="row">#3</td>
-          <td>Mahima Lopez</td>
-          <td>mahima.lopez@mail.com</td>
-          <td>Yes</td>
+          <td scope="row" class="px-0">#3</td>
+          <td class="px-0">Mahima Lopez</td>
+          <td class="px-0">mahima.lopez@mail.com</td>
+          <td class="px-0">Yes</td>
           <td class="text-end p-0">
             <button type="button" class="btn p-0 me-3" data-bs-toggle="modal" data-bs-target="#viewInfoModal">
-              <span class="material-icons d-block">remove_red_eye</span>
+              <a href="javascript:;"><span class="material-icons d-block">remove_red_eye</span></a>
             </button>
-            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editInfoModal">
-              <span class="material-icons d-block">edit</span>
+            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editAdminModal">
+              <a href="javascript:;"><span class="material-icons d-block">edit</span></a>
             </button>
           </td>
         </tr>
         <tr class="align-middle">
-          <td scope="row">#4</td>
-          <td>Pharrell Murray</td>
-          <td>pharrell.murray@mail.com</td>
-          <td>Yes</td>
+          <td scope="row" class="px-0">#4</td>
+          <td class="px-0">Pharrell Murray</td>
+          <td class="px-0">pharrell.murray@mail.com</td>
+          <td class="px-0">Yes</td>
           <td class="text-end p-0">
             <button type="button" class="btn p-0 me-3" data-bs-toggle="modal" data-bs-target="#viewInfoModal">
-              <span class="material-icons d-block">remove_red_eye</span>
+              <a href="javascript:;"><span class="material-icons d-block">remove_red_eye</span></a>
             </button>
-            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editInfoModal">
-              <span class="material-icons d-block">edit</span>
+            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editAdminModal">
+              <a href="javascript:;"><span class="material-icons d-block">edit</span></a>
             </button>
           </td>
         </tr>
         <tr class="align-middle">
-          <td scope="row">#5</td>
-          <td>Annika Mcbride</td>
-          <td>annika.mcbride@mail.com</td>
-          <td>Yes</td>
+          <td scope="row" class="px-0">#5</td>
+          <td class="px-0">Annika Mcbride</td>
+          <td class="px-0">annika.mcbride@mail.com</td>
+          <td class="px-0">Yes</td>
           <td class="text-end p-0">
             <button type="button" class="btn p-0 me-3" data-bs-toggle="modal" data-bs-target="#viewInfoModal">
-              <span class="material-icons d-block">remove_red_eye</span>
+              <a href="javascript:;"><span class="material-icons d-block">remove_red_eye</span></a>
             </button>
-            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editInfoModal">
-              <span class="material-icons d-block">edit</span>
+            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editAdminModal">
+              <a href="javascript:;"><span class="material-icons d-block">edit</span></a>
             </button>
           </td>
         </tr>
         <tr class="align-middle">
-          <td scope="row">#6</td>
-          <td>Fatimah Clark</td>
-          <td>fatimah.clark@mail.com</td>
-          <td>Yes</td>
+          <td scope="row" class="px-0">#6</td>
+          <td class="px-0">Fatimah Clark</td>
+          <td class="px-0">fatimah.clark@mail.com</td>
+          <td class="px-0">Yes</td>
           <td class="text-end p-0">
             <button type="button" class="btn p-0 me-3" data-bs-toggle="modal" data-bs-target="#viewInfoModal">
-              <span class="material-icons d-block">remove_red_eye</span>
+              <a href="javascript:;"><span class="material-icons d-block">remove_red_eye</span></a>
             </button>
-            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editInfoModal">
-              <span class="material-icons d-block">edit</span>
+            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editAdminModal">
+              <a href="javascript:;"><span class="material-icons d-block">edit</span></a>
             </button>
           </td>
         </tr>
         <tr class="align-middle">
-          <td scope="row">#7</td>
-          <td>Klaudia Rhodes</td>
-          <td>klaudia.rhodes@mail.com</td>
-          <td>Yes</td>
+          <td scope="row" class="px-0">#7</td>
+          <td class="px-0">Klaudia Rhodes</td>
+          <td class="px-0">klaudia.rhodes@mail.com</td>
+          <td class="px-0">Yes</td>
           <td class="text-end p-0">
             <button type="button" class="btn p-0 me-3" data-bs-toggle="modal" data-bs-target="#viewInfoModal">
-              <span class="material-icons d-block">remove_red_eye</span>
+              <a href="javascript:;"><span class="material-icons d-block">remove_red_eye</span></a>
             </button>
-            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editInfoModal">
-              <span class="material-icons d-block">edit</span>
+            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editAdminModal">
+              <a href="javascript:;"><span class="material-icons d-block">edit</span></a>
             </button>
           </td>
         </tr>
         <tr class="align-middle">
-          <td scope="row">#8</td>
-          <td>Tillie Lucero</td>
-          <td>tillie.lucero@mail.com</td>
-          <td>Yes</td>
+          <td scope="row" class="px-0">#8</td>
+          <td class="px-0">Tillie Lucero</td>
+          <td class="px-0">tillie.lucero@mail.com</td>
+          <td class="px-0">Yes</td>
           <td class="text-end p-0">
             <button type="button" class="btn p-0 me-3" data-bs-toggle="modal" data-bs-target="#viewInfoModal">
-              <span class="material-icons d-block">remove_red_eye</span>
+              <a href="javascript:;"><span class="material-icons d-block">remove_red_eye</span></a>
             </button>
-            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editInfoModal">
-              <span class="material-icons d-block">edit</span>
+            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editAdminModal">
+              <a href="javascript:;"><span class="material-icons d-block">edit</span></a>
             </button>
           </td>
         </tr>
         <tr class="align-middle">
-          <td scope="row">#9</td>
-          <td>Sabrina Stephenson</td>
-          <td>sabrina.stephenson@mail.com</td>
-          <td>Yes</td>
+          <td scope="row" class="px-0">#9</td>
+          <td class="px-0">Sabrina Stephenson</td>
+          <td class="px-0">sabrina.stephenson@mail.com</td>
+          <td class="px-0">Yes</td>
           <td class="text-end p-0">
             <button type="button" class="btn p-0 me-3" data-bs-toggle="modal" data-bs-target="#viewInfoModal">
-              <span class="material-icons d-block">remove_red_eye</span>
+              <a href="javascript:;"><span class="material-icons d-block">remove_red_eye</span></a>
             </button>
-            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editInfoModal">
-              <span class="material-icons d-block">edit</span>
+            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editAdminModal">
+              <a href="javascript:;"><span class="material-icons d-block">edit</span></a>
             </button>
           </td>
         </tr>
         <tr class="align-middle">
-          <td scope="row">#10</td>
-          <td>Annie Smith</td>
-          <td>annie.smith@mail.com</td>
-          <td>Yes</td>
+          <td scope="row" class="px-0">#10</td>
+          <td class="px-0">Annie Smith</td>
+          <td class="px-0">annie.smith@mail.com</td>
+          <td class="px-0">Yes</td>
           <td class="text-end p-0">
             <button type="button" class="btn p-0 me-3" data-bs-toggle="modal" data-bs-target="#viewInfoModal">
-              <span class="material-icons d-block">remove_red_eye</span>
+              <a href="javascript:;"><span class="material-icons d-block">remove_red_eye</span></a>
             </button>
-            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editInfoModal">
-              <span class="material-icons d-block">edit</span>
+            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#editAdminModal">
+              <a href="javascript:;"><span class="material-icons d-block">edit</span></a>
             </button>
           </td>
         </tr>
@@ -223,15 +215,15 @@ current: admin
               <p class="fs-s text-muted mb-xs">emir.wicks@mail.com</p>
               <div class="d-flex align-items-center">
                 <p class="fs-s">Verified</p>
-                <button class="btn ms-auto text-primary p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <button class="btn ms-auto text-primary p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVerified" aria-expanded="false" aria-controls="collapseVerified">
                   <span class="material-icons-outlined d-block fs-4 text-primary">expand_more</span>
                 </button>
               </div>
               <!-- collapse -->
-              <div class="collapse" id="collapseExample">
+              <div class="collapse" id="collapseVerified">
                 <div class="d-flex justify-content-between pt-4">
                   <button type="button" class="btn btn-outline-danger fw-bold px-4" data-bs-dismiss="modal">Deactivate</button>
-                  <button type="button" class="btn btn-primary fw-bold px-4" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#editInfoModal">Edit</button>
+                  <button type="button" class="btn btn-primary fw-bold px-4" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#editAdminModal">Edit</button>
                 </div>
               </div>
             </div>
@@ -240,7 +232,81 @@ current: admin
       </div>
     </div>
   </div>
-  <div class="modal fade" id="editInfoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <!-- modal new admin -->
+  <div class="modal fade" id="newAdminModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+      <form class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title fs-4 fw-bold" id="exampleModalLabel">New Admin</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <fieldset class="border-bottom border-light pb-1 mb-3">
+            <legend class="fs-3 fw-bold mb-2">Account</legend>
+            <div class="mb-3">
+              <div class="mb-3">
+                <label for="exampleInputPassword" class="form-label fs-s">Name</label>
+                <input type="text" class="form-control" id="exampleInputPassword">
+              </div>
+              <label for="exampleInputEmail" class="form-label fs-s">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+            </div>
+          </fieldset>
+          <fieldset class="border-bottom border-light pb-1 mb-3">
+            <legend class="fs-3 fw-bold mb-2">Verification</legend>
+            <div class="mb-3">
+              <div class="d-flex mb-2">
+                <span class="material-icons-outlined fs-4 text-danger d-block me-1">warning</span>
+                <p class="fw-bold">Unverified</p>
+              </div>
+              <button type="button" class="btn btn-lg border-light text-primary fw-bold lh-1 w-100">Send Verification Mail</button>
+            </div>
+          </fieldset>
+          <fieldset class="border-bottom border-light pb-1 mb-3">
+            <legend class="fs-3 fw-bold mb-2">Access Level</legend>
+            <div class="mb-3">
+              <select class="form-select text-secondary" id="access" aria-label="access level">
+                <option disabled="" selected="" value="">-Choose access level-</option>
+                <option value="Admin">Admin</option>
+                <option value="Manufacturer">Manufacturer</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="fs-3 fw-bold mb-2">Custom Access</legend>
+            <ul class="mb-3 form-check">
+              <li class="mb-2">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Lecture</label>
+              </li>
+              <li class="mb-2">
+                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck2">Coupon</label>
+              </li>
+              <li class="mb-2">
+                <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                <label class="form-check-label" for="exampleCheck3">Message</label>
+              </li>
+              <li class="mb-2">
+                <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                <label class="form-check-label" for="exampleCheck4">Setting</label>
+              </li>
+              <li class="mb-2">
+                <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                <label class="form-check-label" for="exampleCheck5">Task Menu</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="modal-footer py-2">
+          <button type="button" class="btn btn-outline-primary fw-bold px-4 me-2" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary fw-bold px-4">Update</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- modal edit admin -->
+  <div class="modal fade" id="editAdminModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
       <form class="modal-content">
         <div class="modal-header">
@@ -253,10 +319,10 @@ current: admin
             <div class="mb-3">
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label fs-s">Name</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Emir Wicks" readonly>
+                <input type="text" class="form-control border-0" id="exampleInputPassword1" placeholder="Emir Wicks" readonly>
               </div>
               <label for="exampleInputEmail1" class="form-label fs-s">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="emir.wicks@mail.com" readonly>
+              <input type="email" class="form-control border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="emir.wicks@mail.com" readonly>
             </div>
           </fieldset>
           <fieldset class="border-bottom border-light pb-1 mb-3">
