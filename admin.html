@@ -271,7 +271,7 @@
     </ul>
   </nav>
 
-  <!-- Modal -->
+  <!-- modal info admin-->
   <div class="modal fade" id="viewInfoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -286,17 +286,20 @@
               <p>Admin</p>
               <h3 class="fs-4 fw-bold lh-sm mb-xxs">Emir Wicks</h3>
               <a href="mailto:" class="fs-s text-muted mb-xs">emir.wicks@mail.com</a>
-              <div class="d-flex align-items-center">
-                <p class="fs-s">Verified</p>
-                <button class="btn ms-auto text-primary p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVerified" aria-expanded="false" aria-controls="collapseVerified">
-                  <span class="material-icons-outlined d-block fs-4 text-primary">expand_more</span>
-                </button>
-              </div>
-              <!-- collapse -->
-              <div class="collapse" id="collapseVerified">
-                <div class="d-flex justify-content-between pt-4">
-                  <button type="button" class="btn btn-outline-danger fw-bold px-4" data-bs-dismiss="modal">Deactivate</button>
-                  <button type="button" class="btn btn-primary fw-bold px-4" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#editAdminModal">Edit</button>
+              <div class="accordion" id="accordionInfoAdmin">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fs-s p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Verified
+                      <!-- <span class="text-dark">Verified</span> -->
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionInfoAdmin">
+                    <div class="accordion-body d-flex justify-content-between p-0 mt-4">
+                      <button type="button" class="btn btn-outline-danger fw-bold px-4" data-bs-dismiss="modal">Deactivate</button>
+                      <button type="button" class="btn btn-primary fw-bold px-4" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#editAdminModal">Edit</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
