@@ -272,43 +272,6 @@
       </ul>
     </nav>
   </div>
-
-  <!-- modal info admin-->
-  <div class="modal fade" id="viewInfoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="d-flex">
-            <img src="./assets/images/emir.jpeg" alt="會員大頭照" class="modal-img me-3">
-            <div class="flex-grow-1">
-              <div class="d-flex justify-content-between mb-xxs">
-                <span>#1</span>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <p>Admin</p>
-              <h3 class="fs-4 fw-bold lh-sm mb-xxs">Emir Wicks</h3>
-              <a href="mailto:" class="fs-s text-muted mb-xs">emir.wicks@mail.com</a>
-              <div class="accordion" id="accordionInfoAdmin">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button fs-s p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Verified
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionInfoAdmin">
-                    <div class="accordion-body d-flex justify-content-between p-0 mt-4">
-                      <button type="button" class="btn btn-outline-danger fw-bold px-4" data-bs-dismiss="modal">Deactivate</button>
-                      <button type="button" class="btn btn-primary fw-bold px-4" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#editAdminModal">Edit</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <!-- modal new admin -->
   <div class="modal fade" id="newAdminModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
@@ -380,6 +343,42 @@
           <button type="submit" class="btn btn-primary fw-bold px-4">Add</button>
         </div>
       </form>
+    </div>
+  </div>
+  <!-- modal info admin-->
+  <div class="modal fade" id="viewInfoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex">
+            <img src="./assets/images/emir.jpeg" alt="會員大頭照" class="modal-img me-3">
+            <div class="flex-grow-1">
+              <div class="d-flex justify-content-between mb-xxs">
+                <span>#1</span>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <p>Admin</p>
+              <h3 class="fs-4 fw-bold lh-sm mb-xxs">Emir Wicks</h3>
+              <a href="mailto:" class="fs-s text-muted mb-xs">emir.wicks@mail.com</a>
+              <div class="accordion" id="accordionInfoAdmin">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fs-s p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Verified
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionInfoAdmin">
+                    <div class="accordion-body d-flex justify-content-between p-0 mt-4">
+                      <button type="button" class="btn btn-outline-danger fw-bold px-4" data-bs-dismiss="modal">Deactivate</button>
+                      <button type="button" class="btn btn-primary fw-bold px-4" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#editAdminModal">Edit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- modal edit admin -->
