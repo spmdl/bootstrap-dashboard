@@ -1,9 +1,8 @@
 .sidebar {
   background-color: $gray-100;
   width: 296px;
-  // min-height: 100vh;
+  min-height: 100vh;
 }
-
 
 .btn:focus, .btn-light:focus, .btn:active, .btn-light:active {
   box-shadow: none;

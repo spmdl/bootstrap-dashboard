@@ -13,7 +13,6 @@ ol, ul {
 img {
   // max-width: 100%;
   width: 100%;
-  // height: auto;
 	display: block;
 }
 
@@ -32,16 +31,9 @@ p {
 
 small {
   font-size: 0.75em;
-  // line-height: 2;
   color: $gray-300;
 }
 
-main {
-  width: 100%;
-  // min-height: 100vh;
-  height: 100%;
-}
-  
 body {
   font-family: 'Lato', 'Roboto Mono', $font-family-sans-serif;
   font-weight: normal;
