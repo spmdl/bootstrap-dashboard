@@ -180,6 +180,7 @@ current: admin
         </tbody>
       </table>
     </div>
+    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
     <!-- pagination -->
     <nav aria-label="Page navigation">
       <ul class="pagination justify-content-end pt-6">
@@ -199,43 +200,39 @@ current: admin
       </ul>
     </nav>
   </div>
-
-  <!-- modal info admin-->
-  <div class="modal fade" id="viewInfoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
         <div class="modal-body">
-          <div class="d-flex">
-            <img src="./assets/images/emir.jpeg" alt="會員大頭照" class="modal-img me-3">
-            <div class="flex-grow-1">
-              <div class="d-flex justify-content-between mb-xxs">
-                <span>#1</span>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <p>Admin</p>
-              <h3 class="fs-4 fw-bold lh-sm mb-xxs">Emir Wicks</h3>
-              <a href="mailto:" class="fs-s text-muted mb-xs">emir.wicks@mail.com</a>
-              <div class="accordion" id="accordionInfoAdmin">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button fs-s p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Verified
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionInfoAdmin">
-                    <div class="accordion-body d-flex justify-content-between p-0 mt-4">
-                      <button type="button" class="btn btn-outline-danger fw-bold px-4" data-bs-dismiss="modal">Deactivate</button>
-                      <button type="button" class="btn btn-primary fw-bold px-4" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#editAdminModal">Edit</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          Show a second modal and hide this one with the button below.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
         </div>
       </div>
     </div>
   </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Hide this modal and show the first with the button below.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <!-- modal new admin -->
   <div class="modal fade" id="newAdminModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
@@ -307,6 +304,42 @@ current: admin
           <button type="submit" class="btn btn-primary fw-bold px-4">Add</button>
         </div>
       </form>
+    </div>
+  </div>
+  <!-- modal info admin-->
+  <div class="modal fade" id="viewInfoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex">
+            <img src="./assets/images/emir.jpeg" alt="會員大頭照" class="modal-img me-3">
+            <div class="flex-grow-1">
+              <div class="d-flex justify-content-between mb-xxs">
+                <span>#1</span>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <p>Admin</p>
+              <h3 class="fs-4 fw-bold lh-sm mb-xxs">Emir Wicks</h3>
+              <a href="mailto:" class="fs-s text-muted mb-xs">emir.wicks@mail.com</a>
+              <div class="accordion" id="accordionInfoAdmin">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fs-s p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Verified
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionInfoAdmin">
+                    <div class="accordion-body d-flex justify-content-between p-0 mt-4">
+                      <button type="button" class="btn btn-outline-danger fw-bold px-4" data-bs-dismiss="modal">Deactivate</button>
+                      <button type="button" class="btn btn-primary fw-bold px-4" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#editAdminModal">Edit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- modal edit admin -->
@@ -386,7 +419,8 @@ current: admin
           </fieldset>
         </div>
         <div class="modal-footer py-2">
-          <button type="button" class="btn btn-outline-primary fw-bold px-4 me-2" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-outline-primary fw-bold px-4 me-2" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+          <!-- <button type="button" class="btn btn-outline-primary fw-bold px-4 me-2" data-bs-dismiss="modal">Cancel</button> -->
           <button type="submit" class="btn btn-primary fw-bold px-4">Update</button>
         </div>
       </form>
