@@ -13938,11 +13938,6 @@ small, .small {
   color: #6C757D;
 }
 
-main {
-  width: 100%;
-  height: 100%;
-}
-
 body {
   font-family: "Lato", "Roboto Mono", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: normal;
@@ -13957,6 +13952,7 @@ mark, .mark {
 .sidebar {
   background-color: #F8F9FA;
   width: 296px;
+  min-height: 100vh;
 }
 
 .btn:focus, .btn-light:focus, .btn:active, .btn-light:active {
