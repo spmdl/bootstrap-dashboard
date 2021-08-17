@@ -3,6 +3,8 @@
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-@import "./base";
-@import './layout/index.scss'
+@import "./helpers/base";
+@import "./helpers/ckeditor";
+@import "./layout/sidebar";
+@import './layout/index.scss';
 

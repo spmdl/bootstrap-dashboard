@@ -1,48 +1,22 @@
-.sidebar {
-  background-color: $gray-100;
-  width: 296px;
-  min-height: 100vh;
+.head-shot-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
 }
 
-.btn:focus, .btn-light:focus, .btn:active, .btn-light:active {
-  box-shadow: none;
-}
-
-.line-left-hover {
-  position: relative;
-  &::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 4px;
-    height: 32px;
-    border-left: 4px solid transparent;
-  }
-  &:hover {
-    color: $primary;
-    &::before{
-      border-color: $primary;
-    }
-  }
-  &.active{
-    color: $primary;
-    &::before{
-      border-left: 4px solid $primary;
-    }
-  }
-}
-.list-group-item-light {
-  background-color: $gray-100;
-  border-color: $gray-200;
+.modal-img {
+  width: 141px;
+  height: 141px;
+  object-fit: cover;
 }
 
 .list-group-item-action.active {
   background-color: $gray-300;
   border-color: $gray-300;
-  p, h4, h3, span, .text-muted {
-    color: #fff !important; 
+  h4, h3, span {
+    color: $white !important; 
   }
-}
+} 
 
 .card-body {
   li + li {
@@ -56,55 +30,8 @@
   }
 }
 
-.ckeditor-btn-group {
-  position: absolute;
-  right: 1.5rem;
-  bottom: 1rem;
-}
-// .ck.ck-editor__editable_inline {
-//   border-right: none !important;
-//   border-left: none !important;
-//   border-bottom: none !important;
-// }
-.ck.ck-toolbar {
-  border-top: none !important;
-  border-top-left-radius: 0 !important;
-  border-top-right-radius: 0 !important;
-}
-.ck.ck-content {
-  height: 319px;
-}
-
-.vertically-center {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.head-shot {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-}
-
-.modal-img {
-  width: 141px;
-  height: 141px;
-  object-fit: cover;
-}
-
 .page-item:first-child, .page-item:last-child {
   .page-link {
     padding: .375rem .375rem;
   }
-}
-
-.logo {
-  width: 151px;
-  height: 40px;
-  background: url('../images/logo-ANSWER.svg') no-repeat center / cover;
-  display: block;
-  text-indent: 101%;
-  overflow: hidden;
-  white-space: nowrap;
 }
