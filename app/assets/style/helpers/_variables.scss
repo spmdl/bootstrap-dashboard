@@ -95,6 +95,13 @@ $card-cap-bg:                       $gray-100 !default;
 $card-border-color:                 $gray-200 !default;
 $card-border-radius:                0 !default;
 
+// Dropdowns
+$dropdown-border-color:             $gray-200 !default;
+$dropdown-padding-y:                0 !default; 
+$dropdown-link-hover-color:         $white !default;
+$dropdown-link-hover-bg:            $primary !default;
+$dropdown-divider-bg:               $gray-200 !default;
+$dropdown-divider-margin-y:         0 !default;
 
 // Button
 $btn-padding-y-lg:                  1rem !default;
