@@ -1,0 +1,6 @@
+// pagination 因為前後使用 icon，若沒有修改 padding 會和中間的寬度不同
+.page-item:first-child, .page-item:last-child {
+  .page-link {
+    padding: .375rem .375rem;
+  }
+}

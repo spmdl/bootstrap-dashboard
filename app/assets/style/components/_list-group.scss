@@ -1,0 +1,9 @@
+// for Assignment 頁面 aside
+// 為了蓋過 active 後的文字顏色，用 !important 才蓋得過原本的標籤設置
+.list-group-item-action.active {
+  background-color: $gray-300;
+  border-color: $gray-300;
+  h4, h3, span {
+    color: $white !important; 
+  }
+}

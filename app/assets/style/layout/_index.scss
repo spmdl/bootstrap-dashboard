@@ -9,29 +9,3 @@
   height: 141px;
   object-fit: cover;
 }
-
-.list-group-item-action.active {
-  background-color: $gray-300;
-  border-color: $gray-300;
-  h4, h3, span {
-    color: $white !important; 
-  }
-} 
-
-.card-body {
-  li + li {
-    .card-img {
-      padding-top: 1rem;
-    }
-    .card-border {
-      padding-top: 1rem;
-      border-top: 1px solid $gray-200;
-    }
-  }
-}
-
-.page-item:first-child, .page-item:last-child {
-  .page-link {
-    padding: .375rem .375rem;
-  }
-}

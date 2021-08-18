@@ -1,0 +1,13 @@
+// for Assignment 頁面
+// 的留言結構 ul(card-body) > li(留言)，所以在兩個之間加入 border-top（top 因為是加在第二個）
+.card-body {
+  li + li {
+    .card-img {
+      padding-top: 1rem;
+    }
+    .card-border {
+      padding-top: 1rem;
+      border-top: 1px solid $gray-200;
+    }
+  }
+}

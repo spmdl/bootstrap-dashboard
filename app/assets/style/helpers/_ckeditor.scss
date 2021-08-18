@@ -1,15 +1,18 @@
+// 用 position 方式設置按鈕位於 editor 內的指定位置
 .ckeditor-btn-group {
   position: absolute;
   right: 1.5rem;
   bottom: 1rem;
 }
 
-.ck.ck-toolbar {
+// 修改工具列框線、圓角使其貼齊上方 card
+.ck-toolbar {
   border-top: none !important;
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
 }
 
-.ck.ck-content {
-  height: 319px;
+// 修改文字編輯器高度
+.ck-content {
+  height: 281px;
 }
