@@ -113,6 +113,9 @@ $btn-padding-x:                     2rem !default;
 $btn-border-radius:                 .125rem !default;
 $btn-line-height:                   1.5 !default;
 $btn-focus-box-shadow:              none !default;
+$btn-hover-bg-shade-amount:         30% !default;
+$btn-transition:                    color .22s ease-in-out, background-color .22s ease-in-out, border-color .22s ease-in-out, box-shadow .22s ease-in-out !default;
+
 // btn close 
 $btn-close-width:                   .825rem !default;
 $btn-close-height:                  .825rem !default;
