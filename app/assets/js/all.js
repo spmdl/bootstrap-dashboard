@@ -1,34 +1,28 @@
 ClassicEditor
-  .create( document.querySelector('#editor'), {
-    toolbar: [ 'heading', 'bold', 'italic', 'bulletedList', 'numberedList',  'imageUpload', 'link', 'code', '|', 'outdent','indent' ],
-    placeholder: 'Reply an answer…',
-    heading: [
-      {
-        model: 'paragraph',
-        title: 'Paragraph',
-        class: 'ck-heading_paragraph'
+.create( document.querySelector( '#editor' ), {
+  placeholder: 'Reply an answer…',
+  // 設定 Heading 內的樣式，可新增多個
+  heading: {
+    options: [
+      { 
+        model: 'paragraph', 
+        title: 'Body Text', 
+        class: 'ck-heading_paragraph' 
       },
-      {
-        model: 'heading1',
-        view: 'h2',
-        title: 'Heading 1',
-        class: 'ck-heading_heading1'
-      },
-      {
-        model: 'heading2',
-        view: 'h3',
-        title: 'Heading 2',
-        class: 'ck-heading_heading2_fancy',
-        converterPriority: 'high'
-      }
-    ],
-  })
-  .then( editor => {
-    console.log( editor );
-  } )
-  .catch( error => {
-    console.error( error );
-  });
+    ]
+  },
+  indentBlock: {
+      offset: 2,
+      unit: 'rem'
+  },
+  language: 'zh',
+} )
+.then( editor => {
+    console.log( 'Editor was initialized', editor );
+} )
+.catch( error => {
+    console.error( error.stack );
+} );
 
 (function () {
   let card = document.querySelector(".card");
