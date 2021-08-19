@@ -13496,14 +13496,16 @@ fieldset:disabled .btn {
 
 .ck-content ul {
   list-style: disc;
-  -webkit-padding-start: 40px;
-          padding-inline-start: 40px;
+  padding-left: 2rem;
 }
 
 .ck-content ol {
   list-style: decimal;
-  -webkit-padding-start: 40px;
-          padding-inline-start: 40px;
+  padding-left: 1.8rem;
+}
+
+.ck-content ol li {
+  padding-left: .2rem;
 }
 
 *,
