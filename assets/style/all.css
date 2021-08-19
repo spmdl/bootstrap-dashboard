@@ -13494,6 +13494,18 @@ fieldset:disabled .btn {
   height: 281px;
 }
 
+.ck-content ul {
+  list-style: disc;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+}
+
+.ck-content ol {
+  list-style: decimal;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+}
+
 *,
 *::before,
 *::after {
