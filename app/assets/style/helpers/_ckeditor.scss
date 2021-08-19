@@ -21,9 +21,13 @@
 // padding-inline-start 解決 base 預設 padding0 問題
 .ck-content ul {
   list-style: disc;
-  padding-inline-start: 40px;
+  padding-left: 2rem;
 }
 .ck-content ol {
   list-style: decimal;
-  padding-inline-start: 40px;
+  padding-left: 1.8rem;
+  // 針對字型的不同去做間距的調整使兩種 list 對齊
+  li {
+    padding-left: .2rem;
+  }
 }
