@@ -16,3 +16,14 @@
 .ck-content {
   height: 281px;
 }
+
+// list-style 解決 bootstrap 預設樣式問題
+// padding-inline-start 解決 base 預設 padding0 問題
+.ck-content ul {
+  list-style: disc;
+  padding-inline-start: 40px;
+}
+.ck-content ol {
+  list-style: decimal;
+  padding-inline-start: 40px;
+}
