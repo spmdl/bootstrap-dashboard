@@ -17,7 +17,6 @@ ClassicEditor.create(document.querySelector('#editor'), {
   language: 'zh'
 }).then(function (editor) {
   console.log('Editor was initialized', editor);
-  Array.from(editor.ui.componentFactory.names());
 })["catch"](function (error) {
   console.error(error.stack);
 });
